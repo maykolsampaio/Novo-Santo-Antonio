@@ -1,3 +1,2 @@
-Novo-Santo-Antonio
-obina é melhor que eto'o
+Aplicação para cadastro de familias em posto de saúde
 ==================
