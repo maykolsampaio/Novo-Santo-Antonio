@@ -1,0 +1,1 @@
+json.extract! @ficha, :endereco, :numero, :bairro, :cep, :municipio, :segmento, :area, :micro_area, :ficha, :data, :tipo_casa, :comodos, :energia_eletrica, :destino_lixo, :tratamento_agua, :abastecimento_agua, :destino_fezes, :created_at, :updated_at

@@ -1,0 +1,36 @@
+<h1>Fichas A</h1>
+<b>Total de Fichas: <%= @fichas.count %></b>
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Ficha</th>
+      <th>Micro area</th>
+      <th>Data</th>
+      <th>Tipo casa</th>
+      <th>Comodos</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fichas.each do |ficha| %>
+      <tr>
+        <td class="span2"><%= ficha.ficha %></td>
+        <td class="span2"><%= ficha.micro_area %></td>
+        <td class="span2"><%= ficha.data %></td>
+        <td class="span3"><%= ficha.tipo_casa %></td>
+        <td class="span2"><%= ficha.comodos %></td>
+        <td><%= link_to 'Exibir', ficha, :class => 'btn btn-mini btn-info' %></td>
+        <td><%= link_to 'Alterar', edit_ficha_path(ficha), :class => 'btn btn-mini' %></td>
+        <td><%= link_to 'Excluir', ficha, method: :delete, data: { confirm: 'Você tem certeza?' }, :class => 'btn btn-mini btn-danger' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo', new_ficha_path, :class => 'btn btn-primary' %>
+<%= link_to 'Voltar', root_path, :class => 'btn btn-primary' %>

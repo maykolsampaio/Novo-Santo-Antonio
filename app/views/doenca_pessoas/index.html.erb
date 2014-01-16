@@ -1,0 +1,30 @@
+<h1>Pessoas com doenças</h1>
+<b>Total de Casos: <%= @doenca_pessoas.count %></b>
+<table  class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Observacao</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @doenca_pessoas.each do |doenca_pessoa| %>
+      <tr>
+        <td><%= doenca_pessoa.data %></td>
+        <td><%= doenca_pessoa.observacao %></td>
+        <td><%= link_to 'Exibir', doenca_pessoa %></td>
+        <td><%= link_to 'Alterar', edit_doenca_pessoa_path(doenca_pessoa) %></td>
+        <td><%= link_to 'Excluir', doenca_pessoa, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo', new_doenca_pessoa_path, :class => 'btn btn-primary' %>
+<%= link_to 'Voltar', root_path, :class => 'btn btn-primary' %>

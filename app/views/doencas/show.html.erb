@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @doenca.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @doenca.descricao %>
+</p>
+
+<%= link_to 'Alterar', edit_doenca_path(@doenca), :class => 'btn btn-primary' %> |
+<%= link_to 'Voltar', doencas_path, :class => 'btn btn-primary' %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @doenca_pessoa.data %>
+</p>
+
+<p>
+  <strong>Observacao:</strong>
+  <%= @doenca_pessoa.observacao %>
+</p>
+
+<%= link_to 'Alterar', edit_doenca_pessoa_path(@doenca_pessoa) %> |
+<%= link_to 'Voltar', doenca_pessoas_path %>

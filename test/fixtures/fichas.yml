@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  endereco: MyString
+  numero: MyString
+  bairro: MyString
+  cep: MyString
+  municipio: MyString
+  segmento: 1
+  area: 1
+  micro_area: 1
+  ficha: 1
+  data: 2013-12-03
+  tipo_casa: MyString
+  comodos: 1
+  energia_eletrica: MyString
+  destino_lixo: MyString
+  tratamento_agua: MyString
+  abastecimento_agua: MyString
+  destino_fezes: MyString
+
+two:
+  endereco: MyString
+  numero: MyString
+  bairro: MyString
+  cep: MyString
+  municipio: MyString
+  segmento: 1
+  area: 1
+  micro_area: 1
+  ficha: 1
+  data: 2013-12-03
+  tipo_casa: MyString
+  comodos: 1
+  energia_eletrica: MyString
+  destino_lixo: MyString
+  tratamento_agua: MyString
+  abastecimento_agua: MyString
+  destino_fezes: MyString

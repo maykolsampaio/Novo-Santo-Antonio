@@ -1,0 +1,86 @@
+<%= form_for(@ficha) do |f| %>
+  <% if @ficha.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ficha.errors.count, "error") %> prohibited this ficha from being saved:</h2>
+
+      <ul>
+      <% @ficha.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :endereco %><br>
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :numero %><br>
+    <%= f.text_field :numero %>
+  </div>
+  <div class="field">
+    <%= f.label :bairro %><br>
+    <%= f.text_field :bairro %>
+  </div>
+  <div class="field">
+    <%= f.label :cep %><br>
+    <%= f.text_field :cep %>
+  </div>
+  <div class="field">
+    <%= f.label :municipio %><br>
+    <%= f.text_field :municipio %>
+  </div>
+  <div class="field">
+    <%= f.label :segmento %><br>
+    <%= f.number_field :segmento %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.number_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :micro_area %><br>
+    <%= f.number_field :micro_area %>
+  </div>
+  <div class="field">
+    <%= f.label :ficha %><br>
+    <%= f.number_field :ficha %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.date_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_casa %><br>
+    <%= f.select :tipo_casa, (["", "Palafita", "Barraco", "Pau a pique", "Alvenaria", "Casa", "Condomínio","Predio"]) %>
+  </div>
+  <div class="field">
+    <%= f.label :comodos %><br>
+    <%= f.number_field :comodos %>
+  </div>
+  <div class="field">
+    <%= f.label :energia_eletrica %><br>
+    <%= f.select :energia_eletrica, (["", "Sim", "Não"]) %>
+  </div>
+  <div class="field">
+    <%= f.label :destino_lixo %><br>
+    <%= f.text_field :destino_lixo %>
+  </div>
+  <div class="field">
+    <%= f.label :tratamento_agua %><br>
+    <%= f.select :tratamento_agua, (["", "Sim", "Não"]) %>
+  </div>
+  <div class="field">
+    <%= f.label :abastecimento_agua %><br>
+    <%= f.select :abastecimento_agua, (["", "Sim", "Não"]) %>
+  </div>
+  <div class="field">
+    <%= f.label :destino_fezes %><br>
+    <%= f.text_field :destino_fezes %>
+  </div>
+  <div class="row">
+    <div class="span1 actions">
+     <%= f.submit "Salvar", :class => 'btn btn-primary' %>
+  </div>
+<% end %>

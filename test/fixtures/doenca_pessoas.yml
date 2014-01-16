@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  data: 2013-12-03
+  observacao: MyText
+
+two:
+  data: 2013-12-03
+  observacao: MyText

@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>D:</strong>
+  <%= @pessoa.d %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @pessoa.nome %>
+</p>
+
+<p>
+  <strong>Data nascimento:</strong>
+  <%= @pessoa.data_nascimento %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @pessoa.sexo %>
+</p>
+
+<p>
+  <strong>Alfabetizado:</strong>
+  <%= @pessoa.alfabetizado %>
+</p>
+
+<p>
+  <strong>Frequenta escola:</strong>
+  <%= @pessoa.frequenta_escola %>
+</p>
+
+<p>
+  <strong>Ocupacao:</strong>
+  <%= @pessoa.ocupacao %>
+</p>
+
+<p>
+  <strong>Doencas:</strong>
+  <%= @pessoa.doencas %>
+</p>
+
+<p>
+  <strong>Nome plano de saude:</strong>
+  <%= @pessoa.nome_plano_de_saude %>
+</p>
+
+<p>
+  <strong>Meio comunicacao:</strong>
+  <%= @pessoa.meio_comunicacao %>
+</p>
+
+<p>
+  <strong>Cooperativa:</strong>
+  <%= @pessoa.cooperativa %>
+</p>
+
+<p>
+  <strong>Religiao:</strong>
+  <%= @pessoa.religiao %>
+</p>
+
+<p>
+  <strong>Transporte:</strong>
+  <%= @pessoa.transporte %>
+</p>
+
+<p>
+  <strong>Ficha:</strong>
+  <%= @pessoa.ficha %>
+</p>
+
+<%= link_to 'Alterar', edit_pessoa_path(@pessoa), :class => 'btn btn-primary' %> |
+<%= link_to 'Voltar', pessoas_path, :class => 'btn btn-primary' %>

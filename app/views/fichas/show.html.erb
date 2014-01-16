@@ -1,0 +1,94 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @ficha.endereco %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @ficha.numero %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @ficha.bairro %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @ficha.cep %>
+</p>
+
+<p>
+  <strong>Municipio:</strong>
+  <%= @ficha.municipio %>
+</p>
+
+<p>
+  <strong>Segmento:</strong>
+  <%= @ficha.segmento %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @ficha.area %>
+</p>
+
+<p>
+  <strong>Micro area:</strong>
+  <%= @ficha.micro_area %>
+</p>
+
+<p>
+  <strong>Ficha:</strong>
+  <%= @ficha.ficha %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @ficha.data %>
+</p>
+
+<p>
+  <strong>Tipo casa:</strong>
+  <%= @ficha.tipo_casa %>
+</p>
+
+<p>
+  <strong>Comodos:</strong>
+  <%= @ficha.comodos %>
+</p>
+
+<p>
+  <strong>Energia eletrica:</strong>
+  <%= @ficha.energia_eletrica %>
+</p>
+
+<p>
+  <strong>Destino lixo:</strong>
+  <%= @ficha.destino_lixo %>
+</p>
+
+<p>
+  <strong>Tratamento agua:</strong>
+  <%= @ficha.tratamento_agua %>
+</p>
+
+<p>
+  <strong>Abastecimento agua:</strong>
+  <%= @ficha.abastecimento_agua %>
+</p>
+
+<p>
+  <strong>Destino fezes:</strong>
+  <%= @ficha.destino_fezes %>
+</p>
+
+<p>
+  <strong>Total de Pessoas na Família:</strong>
+ <%= @ficha.pessoas.count %></b>
+</p>
+
+<%= link_to 'Alterar', edit_ficha_path(@ficha), :class => 'btn btn-primary' %> |
+<%= link_to 'Voltar', fichas_path, :class => 'btn btn-primary' %>
